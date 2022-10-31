@@ -1,0 +1,17 @@
+<div class="card">
+  <app-toolbar (searchEvent)="searchForMovie($event)"></app-toolbar>
+<table>
+  <div
+    title="Click on me to see details!"
+    (click)="findMovieDetails(movie)"
+    *ngFor="let movie of movies"
+  >
+    <img src="{{movie.Poster}}" />
+    {{movie.Title}}
+  </div>
+</table>
+<app-paginator
+  [pagesTotal]="pagesTotal"
+  (currentPage)="getMovies($event)"
+></app-paginator>
+</div>

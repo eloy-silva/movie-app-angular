@@ -1,0 +1,20 @@
+table {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: bolder;
+  border-radius: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  div {
+    border-radius: 3%;
+    display: grid;
+    margin: 20px;
+    justify-items: center;
+    box-shadow: #6e204e29 0px 3px 6px, #0000003b 0px 3px 6px;
+    img {
+      width: 300px;
+    }
+    cursor: pointer;
+  }
+}
